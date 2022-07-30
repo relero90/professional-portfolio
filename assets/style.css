@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  /* border: 2px solid #92ba92; */
+}
+
+body {
+  margin: 0;
+  flex-direction: column;
+  background-color: #a26565;
+  /* background-color: #FBF8F1; */
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #13293d;
+  color: #78938a;
+}
+
+header h1 {
+  font-size: 300%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+nav a {
+  display: inline-block;
+  color: #78938a;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 1rem;
+  font-size: 200%;
+}
