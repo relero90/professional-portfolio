@@ -2,7 +2,7 @@
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
 }
-
+/* creates margin space for floating header, sets position as relative so that the footer can be placed in an absolute position */
 body {
   margin: 6rem 0 0 0;
   color: #233454;
@@ -23,15 +23,14 @@ h2 {
 .contact {
   font-size: 2.5rem;
 }
-
+/* styles nav bar links */
 nav a {
   /* color: #78938a; */
   font-weight: bold;
-  text-decoration: none;
   margin: 1.2rem;
   font-size: 1.8rem;
 }
-
+/* main header fixed even while scrolling, creates a flex container to align h1 and ul horizontally and space them */
 .main-header {
   position: fixed;
   top: 0;
@@ -45,19 +44,19 @@ nav a {
   background-color: #233454;
   color: #78938a;
 }
-
+/* creates a flex container within ul to display the three lis horizontally */
 .main-header nav ul {
   display: flex;
   justify-content: space-between;
 }
-
+/* creates a flex container to display img and div horizontally */
 .about-me {
   display: flex;
   padding: 1rem;
   background-color: #c3dbd9;
   color: #233454;
 }
-
+/* holds the img at a maximum width */
 .about-me img {
   max-width: 25vw;
   height: auto;
@@ -72,14 +71,14 @@ nav a {
 .projects {
   padding: 1rem;
 }
-
+/* my-work heading takes up 100% width of the page */
 .my-work {
   width: 100%;
   padding: 1.5rem;
   margin-top: 2vh;
   text-align: end;
 }
-
+/* creates a flex container to display and space the project cards horizontally */
 .projects {
   display: flex;
   justify-content: space-evenly;
@@ -89,7 +88,7 @@ nav a {
   width: 100%;
   text-align: end;
 }
-
+/* styles project cards and establishes them as flex containers, each displaying their contents in columns */
 .project-card {
   min-width: 25%;
   min-height: 30vh;
@@ -123,7 +122,7 @@ nav a {
   align-self: center;
   justify-self: end;
 }
-
+/* holds footer at bottom of page (below viewport) */
 footer {
   position: absolute;
   left: 0;
@@ -133,10 +132,8 @@ footer {
   color: #78938a;
   font-size: 1.5vw;
   padding: 1rem;
-  display: flex;
-  justify-content: space-between;
 }
-
+/* colors all links consistently and removes underlining */
 a {
   text-decoration: none;
   color: #a26565;
