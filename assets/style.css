@@ -51,7 +51,6 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
-
 /* creates a flex container to display img and div horizontally */
 .about-me {
   display: flex;
@@ -71,7 +70,7 @@ nav a {
   padding: 1rem 0 1rem 0;
 }
 /* My Work heading takes up 100% width of the page */
-#my-work {
+#my-projects {
   width: 100%;
   padding: 1.5rem;
   margin-top: 2vh;
@@ -99,10 +98,6 @@ nav a {
   display: flex;
   flex-direction: column;
 }
-/* sets project cards marked with complete-projects id to display larger than incomplete projects */
-#complete-projects {
-  width: 40%;
-}
 /* styles header text for project cards */
 .project-card h2 {
   text-align: center;
@@ -123,6 +118,10 @@ nav a {
   padding: 1vh;
   align-self: center;
   justify-self: end;
+}
+/* sets project cards marked with complete-projects id to display larger than incomplete projects */
+#complete-projects {
+  width: 40%;
 }
 /* displays footer at bottom of page and styles colors/padding */
 footer {
@@ -146,6 +145,7 @@ a {
 }
 
 /* media queries for responsive layout - at a specific viewport width and lower, the following rules apply */
+/* 820px and lower */
 @media screen and (max-width: 820px) {
   /* stacks h1 over nav in a column */
   header {
