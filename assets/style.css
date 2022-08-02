@@ -1,3 +1,10 @@
+:root {
+  --background-dark: #a26565;
+  --background-light: #c3dbd9;
+  --header: #233454;
+  --accent: #78938a;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
@@ -5,8 +12,8 @@
 /* creates margin space for floating header, sets position as relative so that the footer can be placed in an absolute position */
 body {
   margin: 6rem 0 0 0;
-  color: #233454;
-  background-color: #a26565;
+  color: var(--header);
+  background-color: var(--background-dark);
   line-height: 1.4rem;
   min-height: 150vh;
   position: relative;
@@ -41,8 +48,8 @@ nav a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #233454;
-  color: #78938a;
+  background-color: var(--header);
+  color: var(--accent);
 }
 /* creates a flex container within ul to display the three lis horizontally */
 .main-header nav ul {
@@ -53,15 +60,16 @@ nav a {
 .about-me {
   display: flex;
   padding: 1rem;
-  background-color: #c3dbd9;
-  color: #233454;
+  background-color: var(--background-light);
+  color: var(--header);
 }
 /* holds the img at a maximum width */
 .about-me img {
-  max-width: 25vw;
+  width: 25%;
   height: auto;
+  padding: 10px;
   /* image distorts at 1192px vw and smaller */
-  padding: 1rem;
+  /* padding-top: 56.25%; */
 }
 
 .about-me h2 {
@@ -92,11 +100,11 @@ nav a {
 .project-card {
   min-width: 25%;
   min-height: 30vh;
-  border: 2px solid #233454;
+  border: 2px solid var(--header);
   border-radius: 5%;
   box-shadow: 1vh 1vh 5px;
   padding: 1vw;
-  background-color: #c3dbd9;
+  background-color: var(--background-light);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -104,8 +112,8 @@ nav a {
 
 .project-card h2 {
   text-align: center;
-  background-color: #233454;
-  color: #c3dbd9;
+  background-color: var(--header);
+  color: var(--background-light);
   font-size: 1.8rem;
   padding: 1rem;
 }
@@ -128,8 +136,8 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #233454;
-  color: #78938a;
+  background-color: var(--header);
+  color: var(--accent);
   font-size: 1.5vw;
   text-align: end;
   padding: 1rem;
@@ -137,5 +145,5 @@ footer {
 /* colors all links consistently and removes underlining */
 a {
   text-decoration: none;
-  color: #a26565;
+  color: var(--background-dark);
 }
