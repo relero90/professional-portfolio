@@ -7,10 +7,10 @@ This is a web application to display my growing professional portfolio as a full
 ## Screenshots
 
 Desktop View
-!["A professional portfolio webpage with a header, navigation bar, headshot, bio section, project examples, and a footer containing contact information"](./assets/webapp-screenshot.png)
+!["A professional portfolio webpage with a header, navigation bar, headshot, bio section, project examples, and a footer containing contact information"](./assets/images/webapp-screenshot.png)
 
 Mobile View
-!["A mobile view of the same web application"](./assets/webapp-screenshot-mobile.png)
+!["A mobile view of the same web application"](./assets/images/webapp-screenshot-mobile.png)
 
 ## Deployed Application Link
 
