@@ -1,8 +1,9 @@
 /* declares color variables */
 :root {
-  --background-dark: #a26565;
-  --background-light: #c3dbd9;
-  --header: #233454;
+  --background-dark: #a27b5c;
+  --background-light: #2c3639;
+  --light: #dcd7c9;
+  --header: #1b1e20;
   --accent: #78938a;
 }
 /* sets font family and box sizes */
@@ -13,8 +14,8 @@
 /* creates margin space for floating header, sets position as relative so that the footer can be placed in an absolute position */
 body {
   margin: 6rem 0 0 0;
-  color: var(--header);
-  background-color: var(--background-dark);
+  color: var(--accent);
+  background-color: var(--background-light);
   line-height: 1.4rem;
   position: relative;
 }
@@ -25,6 +26,11 @@ h1 {
 
 h2 {
   font-size: 3vw;
+  color: var(--accent);
+}
+
+p {
+  color: var(--accent);
 }
 /* main header fixed even while scrolling, creates a flex container to align h1 and ul horizontally and space them */
 .main-header {
@@ -55,6 +61,8 @@ nav a {
 .about-me {
   display: flex;
   padding: 1rem;
+  margin-top: 30vh;
+  margin-bottom: 20vh;
   background-color: var(--background-light);
   color: var(--header);
 }
@@ -64,10 +72,18 @@ nav a {
   width: 25%;
   height: auto;
   padding: 10px;
+  border-radius: 50%;
 }
 /* pads About Me sub-header from its p sibling */
 .about-me h2 {
   padding: 1rem 0 1rem 0;
+  color: var(--accent);
+}
+.about-me div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 /* My Work heading takes up 100% width of the page */
 #my-projects {
@@ -80,6 +96,7 @@ nav a {
 .projects {
   padding: 1rem;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
@@ -87,29 +104,46 @@ nav a {
 }
 /* styles project cards and establishes them as flex containers, each displaying their contents in columns */
 .project-card {
-  height: 35%;
-  width: 25%;
-  border: 2px solid var(--header);
-  border-radius: 5%;
-  box-shadow: 1vh 1vh 5px;
+  max-height: 80vh;
+  width: 100%;
+  /* border: 2px solid var(--header); */
+  /* border-radius: 5%;
+  box-shadow: 1vh 1vh 5px; */
   padding: 1vw;
+  margin-top: 20px;
+  margin-bottom: 60px;
   background-color: var(--background-light);
   text-align: center;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
+  /* flex-direction: column; */
 }
+
+.card-text-elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+}
+
 /* styles header text for project cards */
 .project-card h2 {
   text-align: center;
-  background-color: var(--header);
-  color: var(--background-light);
-  font-size: 1.8vw;
+  /* background-color: var(--header); */
+  color: var(--accent);
+  font-size: 2vw;
   padding: 1rem;
 }
+
+.card-img {
+  width: 45%;
+}
+
 /* Align-self:center holds aspect ratio of images in cards */
 .project-card img {
   padding: 5px;
   max-width: 90%;
+  max-height: 100%;
   align-self: center;
   justify-self: center;
 }
@@ -118,11 +152,13 @@ nav a {
   padding: 1vh;
   align-self: center;
   justify-self: end;
+  font-size: 1.5vw;
+  line-height: 6vh;
 }
 /* sets project cards marked with complete-projects id to display larger than incomplete projects */
-#complete-projects {
+/* #complete-projects {
   width: 40%;
-}
+} */
 /* displays footer at bottom of page and styles colors/padding */
 footer {
   display: fixed;
@@ -133,6 +169,22 @@ footer {
   color: var(--accent);
   text-align: end;
   padding: 1rem;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.credit {
+  display: flex;
+  align-items: flex-end;
+  text-align: left;
+  color: var(--background-light);
+}
+.credit a {
+  text-decoration: none;
+  color: var(--background-light);
 }
 
 #contact {
@@ -165,7 +217,7 @@ a {
   }
   /* sizes headshot to fill screen */
   .about-me img {
-    width: 90%;
+    width: 60%;
   }
   /* stacks project cards in a column */
   .projects {
@@ -176,7 +228,15 @@ a {
   .project-card,
   #complete-projects {
     width: 90%;
-    margin-bottom: 20px;
+    margin-top: 30vh;
+    margin-bottom: 20vh;
+  }
+
+  .card-img {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   /* sizes project card headers to fit expanded project cards */
   .project-card h2 {

@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <!-- Google Font - Raleway -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Rebecca Roberts</title>
+    
+    <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png">
   </head>
 
   <body>
@@ -31,7 +33,7 @@
     <main>
       <!-- About Me -->
       <section class="about-me">
-        <img src="./assets/headshot.jpeg" alt="A photo of Rebecca Roberts" />
+        <img src="./assets/images/headshot.jpeg" alt="A photo of Rebecca Roberts" />
         <div>
           <h2>About Me</h2>
           <p>
@@ -44,35 +46,38 @@
       <section class="projects">
         <!-- Project Card 1 -->
         <div class="project-card" id="complete-projects">
-          <h2>CSS Snippet Cheat Sheet</h2>
-          <a target="_blank" href="https://relero90.github.io/css-snippet-cheatsheet/"><img src="./assets/css-snippets.png" alt="The webpage shows snippets of copyable css code styled in boxes on the screen."/></a>
-          <p>A quick bank of copyable CSS snippets for easy styling</p>
+          <div class="card-text-elements">
+            <h2>Kiss the Cook</h2>
+            <p>A simple recipe sharing app for the home cook who wants to skip the blogger's life story and get straight to making dinner.</p>
+          </div>
+          <div class="card-img">
+            <a target="_blank" href="#"><img src="./assets/images/kiss-the-cook.png" alt=""/></a>
+          </div>
         </div>
         <!-- Project Card 2 -->
         <div class="project-card">
-          <h2>Brewfinder</h2>
-          <a target="_blank" href="https://relero90.github.io/brewfinder/"><img src="./assets/app-screenshot.png" alt="Screenshot coming soon"/></a>
-          <p>We find beers so you don't have to.</p>
-        </div>
-        <!-- Project Card 3 -->
-        <div class="project-card">
-          <h2>Project 3</h2>
-          <a target="_blank" href="#"><img src="#" alt="Screenshot coming soon"/></a>
-          <p>project description</p>
+          <div class="card-text-elements">
+            <h2>Brewfinder</h2>
+            <p>We find beers so you don't have to.</p>
+          </div>
+          <div class="card-img">
+            <a target="_blank" href="https://relero90.github.io/brewfinder/"><img src="./assets/images/app-screenshot.png" alt="Screenshot coming soon"/></a></div>
         </div>
       </section>
     </main>
 <!-- Footer with Contact Info & Resume Link -->
     <footer>
+      <div class="footer-flex"><div class="credit"><a target="_blank" href="https://icons8.com/icon/114738/orca">Orca</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></div>
       <div>
         <h3 id="contact">Contact</h4>
         <ul>
-          <li><a href="relero90@gmail.com"> relero90@gmail.com</a></li>
-          <li><a href="http://https://github.com/relero90">GitHub</a></li>
-          <li><a href="www.linkedin.com/in/becca-roberts-a87729240">LinkedIn</a></li>
-          <li id="resume"><a href="#">Download Resume</a></li>
+          <li><a href="mailto:relero90@gmail.com" target="_blank"> relero90@gmail.com</a></li>
+          <li><a href="https://github.com/relero90" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/becca-roberts-a87729240/" target="_blank">LinkedIn</a></li>
+          <li id="resume"><a  target="_blank" href="#">Download Resume</a></li>
         </ul>
-      </div>
+      </div></div>
+      
     </footer>
   </body>
 </html>
